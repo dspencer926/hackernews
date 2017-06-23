@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <title>Hacker News!</title>
+  <link rel='stylesheet' type='text/css' href='./reset.css'>
+  <link rel='stylesheet' type='text/css' href='./style.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body>
+  
+  <nav> 
+    <h1 id='title'>The Hackernews Reading Room</h1>
+    <div id='nav-links'>
+      <ul id='nav-list'>
+        <li>Home</li>
+        <li>About</li>
+        <li>More Links</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id='intro'>
+    <p>Welcome to the Reading Room.  Hackernews articles are listed in the box on the left.  If an article looks interesting, you can add it to your personal list on the right, and keep scrolling for other articles. When you're done parousing, you can go through your personal list and click the "Read in Viewer" box to load the article in the viewer.  When you're done with an article, click the X button and it'll disappear.  You can remove any item from your personal list by clicking its orange X button.  Enjoy :)
+    </p><br/>
+    <p>Note: Sometimes a link won't load in the viewer, in which case you can click the "Link to Page" box to load it in a new tab.</p>
+  </div>
+
+  <div id='articles-container'>
+    <div id='list-div'>
+      <ul id='list'></ul>
+    </div>
+    <div id='desc-div'></div>
+  </div>
+  
+  <div id='display-div' class='hidden'>
+    <div id='exit'>X</div>
+    <iframe id='display'></iframe> 
+  </div>
+
+  <script src='./main.js'></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+body {
+  display: block;
+  position: absolute;
+  background-color: white;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background: rgb(255, 103, 2);
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+iframe {
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  background: white;
+}
+
+li:hover {
+  background-color: rgb(127, 127, 127);
+  color: white;
+}
+
+
+/*CLASSES*/
+
+.item-box {
+  width: 90%;
+  height: 12opx;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 15px;
+  background: rgb(246, 246, 239);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  /*FROM W3 SCHOOLS*/
+}
+
+.list-item {
+  margin: 5px;
+}
+
+.list-item * {
+  margin: 5px 0;
+}
+
+.desc-link{
+  margin: 10px auto;
+  width: 35%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.desc-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.desc-link:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  }
+
+.desc-link:hover a{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  }
+
+.delete-item {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: rgb(255, 103, 2);
+  color: white;
+  position: relative;
+  padding: 2px;
+  font-size: .7em;
+  text-align: center;
+  line-height: 15px;
+}
+
+/*IDs*/
+
+
+#title {
+  margin: 10px;
+  display: inline-block;
+  margin: 20px;
+  color: white;
+}
+
+#nav-links {
+  float: right;
+  margin-right: 10%;
+  line-height: 64px;
+  color: white;
+}
+
+#nav-list li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 64px;
+  margin: 0 5px;
+  padding: 0 10px;
+}
+
+#intro{
+  display: block;
+  color: white;
+  background-color: rgb(127, 127, 127);
+  height: auto;
+  padding: 30px;
+  margin: 20px;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#articles-container {
+  position: fixed;
+  top: 40%;
+  right: 10%;
+  left: 10%;
+  bottom: 15%;
+}
+
+#list-div {
+  display: absolute;
+  border: 1px solid black;
+  z-index: 0;
+  width: 49%;
+  height: 100%;
+  padding: 10px;
+  background: rgb(246, 246, 239);
+  box-sizing: border-box;
+  overflow: hidden; 
+  overflow-y: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  /*FROM W3 SCHOOLS*/
+}
+
+#list {
+  line-height: 1.3em;
+  font-size: 1.2em;
+  height: 100hw;
+  z-index: 0;
+  position: relative;
+  margin: 10px;
+}
+
+#list li {
+  padding: 10px;
+}
+
+#list li:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  /*FROM W3 SCHOOLS*/
+}
+
+#desc-div{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 49%;
+  height: 100%;
+  background: rgb(127, 127, 127);
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 0;
+  text-align: center;
+  overflow: hidden; 
+  overflow-y: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  /*FROM W3 SCHOOLS*/
+}
+
+#desc {
+  font-size: 3em;
+  height: 80%;
+  width: 80%;
+  margin: 65px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 0;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+#display-div {
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  padding: 50px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#exit {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  z-index: 2;
+  background-color: rgb(127, 127, 127);
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
+
+#display {
+  position: fixed;
+  margin: 25px;
+  height: 90%;
+  width: 90%;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid black;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
